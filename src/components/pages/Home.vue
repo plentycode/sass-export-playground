@@ -40,7 +40,7 @@
 <script>
   import Editor from '@/components/Editor';
   import { ANNOTATIONS } from '../../constanst';
-  const seviceUrl = 'https://us-central1-saas-export.cloudfunctions.net/getSassJson ';
+  const seviceUrl = '/getSassJson ';
 
   export default {
     name: 'Home',

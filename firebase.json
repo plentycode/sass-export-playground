@@ -7,10 +7,11 @@
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+     {"source": "/getSassJson",
+      "function": "getSassJson"},{
+    "source": "**",
+    "destination": "/index.html"
+  }
     ]
   }
 }
