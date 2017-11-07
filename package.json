@@ -11,7 +11,8 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "deploy": "npm --prefix ./functions install ./functions && npm run build && firebase deploy"
+    "deploy": "npm --prefix ./functions install ./functions && npm run build && firebase deploy",
+    "serve": "npm run build && firebase serve"
   },
   "dependencies": {
     "ace-builds": "^1.2.9",

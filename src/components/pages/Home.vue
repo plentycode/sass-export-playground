@@ -4,9 +4,7 @@
        <md-menu md-align-trigger>
          <md-button md-menu-trigger>Examples</md-button>
          <md-menu-content>
-           <md-menu-item>My Item 1</md-menu-item>
-           <md-menu-item>My Item 2</md-menu-item>
-           <md-menu-item>My Item 3</md-menu-item>
+           <md-menu-item>Annotations</md-menu-item>
          </md-menu-content>
        </md-menu>
      </md-toolbar>
@@ -30,7 +28,7 @@
           <editor
             language="json"
             :code="resultCode"
-            read-only="true"
+            v-bind:read-only="true"
             />
       </md-layout>
       </md-layout>
@@ -40,7 +38,7 @@
 <script>
   import Editor from '@/components/Editor';
   import { ANNOTATIONS } from '../../constanst';
-  const seviceUrl = '/getSassJson ';
+  import { GetSassExportResult } from '../../services';
 
   export default {
     name: 'Home',
@@ -48,12 +46,9 @@
       Editor
     },
     methods: {
-      onEditorChanged: function(val) {
-        this.resultCode = val;
-        fetch(seviceUrl, {
-          method: "POST",
-          body: val
-        });
+      onEditorChanged: async function(val) {
+       let jsonString = await GetSassExportResult(val);
+       this.resultCode = JSON.stringify(jsonString, null, 2);
      }
    },
     data () {
@@ -76,6 +71,6 @@
   }
   .editor-container {
     min-height: 800px;
-    position: relative;
+    position: relative !important;
   }
 </style>

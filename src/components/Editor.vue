@@ -17,7 +17,6 @@
     },
     watch: {
       code: function(val) {
-        console.log(val);
         this.editor.setValue(val);
       }
     },
@@ -30,18 +29,16 @@
       editor.setReadOnly(this.readOnly);
 
       editor.$blockScrolling = Infinity;
-      // this.editor.setValue(this.code);
       this.$emit('change', editor.getValue());
 
-      editor.getSession().on('change', _.debounce((e) => {
-        console.log(e);
+      editor.getSession().on('change', _.debounce(() => {
         this.$emit('change', editor.getValue());
        }, 500));
     }
   }
 </script>
 
-<style>
+<style scoped>
   .editor {
     position: absolute;
     top: 0;
