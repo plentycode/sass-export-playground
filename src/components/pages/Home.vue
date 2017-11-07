@@ -1,16 +1,25 @@
 <template>
- <section>
-    <md-toolbar class="md-transparent">
-      <md-button class="md-icon-button">
-        <md-icon>save</md-icon>
-      </md-button>
-    </md-toolbar>
-    <md-layout md-gutter class="play-ground-container">
-      <md-layout
-        class="editor-container"
-        md-flex-xsmall="100"
-        md-flex-small="50">
-          <editor v-bind:code="defaultCode" />
+   <section>
+     <md-toolbar class="md-transparent">
+       <md-menu md-align-trigger>
+         <md-button md-menu-trigger>Examples</md-button>
+         <md-menu-content>
+           <md-menu-item>My Item 1</md-menu-item>
+           <md-menu-item>My Item 2</md-menu-item>
+           <md-menu-item>My Item 3</md-menu-item>
+         </md-menu-content>
+       </md-menu>
+     </md-toolbar>
+      <md-layout md-gutter class="play-ground-container">
+        <md-layout
+          class="editor-container"
+          md-flex-xsmall="100"
+          md-flex-small="50">
+            <editor
+              :code="defaultCode"
+              language="scss"
+              @change="onEditorChanged"
+              />
       </md-layout>
 
       <md-layout
@@ -18,26 +27,42 @@
           md-flex-xsmall="100"
           md-flex-small="50">
 
-          <editor/>
+          <editor
+            language="json"
+            :code="resultCode"
+            read-only="true"
+            />
       </md-layout>
-    </md-layout>
+      </md-layout>
   </section>
 </template>
 
 <script>
-import Editor from '@/components/Editor';
-import { ANNOTATIONS } from '../../constanst';
-export default {
-  name: 'Home',
-  components: {
-    Editor
-  },
-  data () {
-    return {
-      defaultCode: ANNOTATIONS
+  import Editor from '@/components/Editor';
+  import { ANNOTATIONS } from '../../constanst';
+  const seviceUrl = 'https://us-central1-saas-export.cloudfunctions.net/getSassJson';
+
+  export default {
+    name: 'Home',
+    components: {
+      Editor
+    },
+    methods: {
+      onEditorChanged: function(val) {
+        this.resultCode = val;
+        fetch(seviceUrl, {
+          method: "POST",
+          body: val
+        });
+     }
+   },
+    data () {
+      return {
+        defaultCode: ANNOTATIONS,
+        resultCode: '{}'
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
