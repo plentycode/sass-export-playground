@@ -11,7 +11,7 @@
   "dependencies": {
     "firebase-admin": "~5.4.2",
     "firebase-functions": "^0.7.1",
-    "sass-export": "^0.1.7"
+    "sass-export": "*"
   },
   "private": true
 }

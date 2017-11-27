@@ -1,13 +1,5 @@
 <template>
    <section>
-     <md-toolbar class="md-transparent">
-       <md-menu md-align-trigger>
-         <md-button md-menu-trigger>Examples</md-button>
-         <md-menu-content>
-           <md-menu-item>Annotations</md-menu-item>
-         </md-menu-content>
-       </md-menu>
-     </md-toolbar>
       <md-layout md-gutter class="play-ground-container">
         <md-layout
           class="editor-container"
@@ -64,13 +56,13 @@
 <style scoped>
   .play-ground-container {
     position: absolute;
-    top: 128px;
+    top: 64px;
     left: 0;
     right: 0;
     bottom: 0;
   }
   .editor-container {
-    min-height: 800px;
+    min-height: 300px;
     position: relative !important;
   }
 </style>
