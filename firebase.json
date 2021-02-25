@@ -1,6 +1,10 @@
 {
+  "functions": {
+    "runtime": "nodejs12"
+  },
   "hosting": {
     "public": "dist",
+    "site": "sass-export",
     "ignore": [
       "firebase.json",
       "**/.*",
