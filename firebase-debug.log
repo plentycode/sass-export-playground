@@ -1,0 +1,22 @@
+[debug] [2021-04-07T01:33:49.885Z] ----------------------------------------------------------------------
+[debug] [2021-04-07T01:33:49.886Z] Command:       /Users/carlosvilla/.nvm/versions/node/v14.4.0/bin/node /Users/carlosvilla/plentycode/sass-export-playground/node_modules/.bin/firebase serve
+[debug] [2021-04-07T01:33:49.886Z] CLI Version:   3.15.3
+[debug] [2021-04-07T01:33:49.887Z] Platform:      darwin
+[debug] [2021-04-07T01:33:49.887Z] Node Version:  v14.4.0
+[debug] [2021-04-07T01:33:49.888Z] Time:          Tue Apr 06 2021 20:33:49 GMT-0500 (Colombia Standard Time)
+[debug] [2021-04-07T01:33:49.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-07T01:33:49.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-07T01:33:49.902Z] > authorizing via signed-in user
+[debug] [2021-04-07T01:33:49.904Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-07T01:33:49.904Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token {
+  refresh_token: '1//09Q4PW1lWrVcBCgYIARAAGAkSNwF-L9IrP8ZBYdmVRVXZLFUUWxy0M40ki1o3uGVKw5_RaTBMUjHy4v5-EyaLwS6jLQxj4eOaclM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid'
+} 
+ Tue Apr 06 2021 20:33:49 GMT-0500 (Colombia Standard Time)
+[debug] [2021-04-07T01:33:50.506Z] <<< HTTP RESPONSE 200
+[debug] [2021-04-07T01:33:50.536Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
+ Tue Apr 06 2021 20:33:50 GMT-0500 (Colombia Standard Time)
