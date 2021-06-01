@@ -5,7 +5,7 @@ const functions = require('firebase-functions');
 // https://firebase.google.com/docs/functions/write-firebase-functions
 
 exports.getSassJson = functions.https.onRequest((request, response) => {
-  exporterBuffer([new Buffer(request.body)]).then((result) => {
+  exporterBuffer([Buffer.from(request.body)]).then((result) => {
     response.send(result);
   });
 });

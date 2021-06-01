@@ -1,22 +1,104 @@
-[debug] [2021-04-07T01:33:49.885Z] ----------------------------------------------------------------------
-[debug] [2021-04-07T01:33:49.886Z] Command:       /Users/carlosvilla/.nvm/versions/node/v14.4.0/bin/node /Users/carlosvilla/plentycode/sass-export-playground/node_modules/.bin/firebase serve
-[debug] [2021-04-07T01:33:49.886Z] CLI Version:   3.15.3
-[debug] [2021-04-07T01:33:49.887Z] Platform:      darwin
-[debug] [2021-04-07T01:33:49.887Z] Node Version:  v14.4.0
-[debug] [2021-04-07T01:33:49.888Z] Time:          Tue Apr 06 2021 20:33:49 GMT-0500 (Colombia Standard Time)
-[debug] [2021-04-07T01:33:49.888Z] ----------------------------------------------------------------------
+[debug] [2021-05-31T23:25:59.749Z] ----------------------------------------------------------------------
+[debug] [2021-05-31T23:25:59.751Z] Command:       /Users/lariza/.nvm/versions/node/v10.13.0/bin/node /Users/lariza/CIM/plentycode/sass-export-playground/node_modules/.bin/firebase deploy
+[debug] [2021-05-31T23:25:59.751Z] CLI Version:   3.19.3
+[debug] [2021-05-31T23:25:59.751Z] Platform:      darwin
+[debug] [2021-05-31T23:25:59.752Z] Node Version:  v10.13.0
+[debug] [2021-05-31T23:25:59.752Z] Time:          Mon May 31 2021 18:25:59 GMT-0500 (Colombia Standard Time)
+[debug] [2021-05-31T23:25:59.752Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-04-07T01:33:49.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-04-07T01:33:49.902Z] > authorizing via signed-in user
-[debug] [2021-04-07T01:33:49.904Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2021-04-07T01:33:49.904Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token {
-  refresh_token: '1//09Q4PW1lWrVcBCgYIARAAGAkSNwF-L9IrP8ZBYdmVRVXZLFUUWxy0M40ki1o3uGVKw5_RaTBMUjHy4v5-EyaLwS6jLQxj4eOaclM',
+[debug] [2021-05-31T23:25:59.767Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-31T23:25:59.768Z] > authorizing via signed-in user
+[debug] [2021-05-31T23:25:59.770Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-31T23:25:59.770Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token:
+   '1//0dFQCJ1fpITkDCgYIARAAGA0SNwF-L9IrJVrWTHbfsJz1Du8VI-8v3M7NmGT42GcTZTrfxzfL8t4sdRsSanoF27s7u6_jlrryQjg',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon May 31 2021 18:25:59 GMT-0500 (Colombia Standard Time)
+[debug] [2021-05-31T23:26:00.243Z] <<< HTTP RESPONSE 200
+[debug] [2021-05-31T23:26:00.274Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
+  
+ Mon May 31 2021 18:26:00 GMT-0500 (Colombia Standard Time)
+[debug] [2021-05-31T23:27:15.719Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1113:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2021-05-31T23:28:31.141Z] ----------------------------------------------------------------------
+[debug] [2021-05-31T23:28:31.142Z] Command:       /Users/lariza/.nvm/versions/node/v10.13.0/bin/node /Users/lariza/CIM/plentycode/sass-export-playground/node_modules/.bin/firebase deploy
+[debug] [2021-05-31T23:28:31.142Z] CLI Version:   3.19.3
+[debug] [2021-05-31T23:28:31.142Z] Platform:      darwin
+[debug] [2021-05-31T23:28:31.142Z] Node Version:  v10.13.0
+[debug] [2021-05-31T23:28:31.144Z] Time:          Mon May 31 2021 18:28:31 GMT-0500 (Colombia Standard Time)
+[debug] [2021-05-31T23:28:31.144Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-31T23:28:31.152Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-31T23:28:31.152Z] > authorizing via signed-in user
+[debug] [2021-05-31T23:28:31.154Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
+  
+ Mon May 31 2021 18:28:31 GMT-0500 (Colombia Standard Time)
+[debug] [2021-05-31T23:29:46.526Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1113:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2021-06-01T00:10:09.539Z] ----------------------------------------------------------------------
+[debug] [2021-06-01T00:10:09.541Z] Command:       /Users/lariza/.nvm/versions/node/v14.15.4/bin/node /Users/lariza/CIM/plentycode/sass-export-playground/node_modules/.bin/firebase deploy
+[debug] [2021-06-01T00:10:09.541Z] CLI Version:   3.19.3
+[debug] [2021-06-01T00:10:09.541Z] Platform:      darwin
+[debug] [2021-06-01T00:10:09.541Z] Node Version:  v14.15.4
+[debug] [2021-06-01T00:10:09.542Z] Time:          Mon May 31 2021 19:10:09 GMT-0500 (Colombia Standard Time)
+[debug] [2021-06-01T00:10:09.542Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-01T00:10:09.560Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-01T00:10:09.560Z] > authorizing via signed-in user
+[debug] [2021-06-01T00:10:09.562Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
+  
+ Mon May 31 2021 19:10:09 GMT-0500 (Colombia Standard Time)
+[debug] [2021-06-01T00:11:24.967Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2021-06-01T00:12:55.183Z] ----------------------------------------------------------------------
+[debug] [2021-06-01T00:12:55.185Z] Command:       /Users/lariza/.nvm/versions/node/v14.15.4/bin/node /Users/lariza/CIM/plentycode/sass-export-playground/node_modules/.bin/firebase deploy
+[debug] [2021-06-01T00:12:55.185Z] CLI Version:   3.19.3
+[debug] [2021-06-01T00:12:55.185Z] Platform:      darwin
+[debug] [2021-06-01T00:12:55.185Z] Node Version:  v14.15.4
+[debug] [2021-06-01T00:12:55.186Z] Time:          Mon May 31 2021 19:12:55 GMT-0500 (Colombia Standard Time)
+[debug] [2021-06-01T00:12:55.186Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-01T00:12:55.198Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-01T00:12:55.198Z] > authorizing via signed-in user
+[debug] [2021-06-01T00:12:55.200Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
+  
+ Mon May 31 2021 19:12:55 GMT-0500 (Colombia Standard Time)
+[debug] [2021-06-01T00:14:10.465Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2021-06-01T13:00:55.085Z] ----------------------------------------------------------------------
+[debug] [2021-06-01T13:00:55.086Z] Command:       /Users/lariza/.nvm/versions/node/v14.15.4/bin/node /Users/lariza/CIM/plentycode/sass-export-playground/node_modules/.bin/firebase deploy
+[debug] [2021-06-01T13:00:55.086Z] CLI Version:   3.19.3
+[debug] [2021-06-01T13:00:55.087Z] Platform:      darwin
+[debug] [2021-06-01T13:00:55.087Z] Node Version:  v14.15.4
+[debug] [2021-06-01T13:00:55.098Z] Time:          Tue Jun 01 2021 08:00:55 GMT-0500 (Colombia Standard Time)
+[debug] [2021-06-01T13:00:55.098Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-01T13:00:55.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-01T13:00:55.123Z] > authorizing via signed-in user
+[debug] [2021-06-01T13:00:55.124Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-01T13:00:55.124Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ {
+  refresh_token: '1//0dFQCJ1fpITkDCgYIARAAGA0SNwF-L9IrJVrWTHbfsJz1Du8VI-8v3M7NmGT42GcTZTrfxzfL8t4sdRsSanoF27s7u6_jlrryQjg',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid'
 } 
- Tue Apr 06 2021 20:33:49 GMT-0500 (Colombia Standard Time)
-[debug] [2021-04-07T01:33:50.506Z] <<< HTTP RESPONSE 200
-[debug] [2021-04-07T01:33:50.536Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
- Tue Apr 06 2021 20:33:50 GMT-0500 (Colombia Standard Time)
+ Tue Jun 01 2021 08:00:55 GMT-0500 (Colombia Standard Time)
+[debug] [2021-06-01T13:00:55.488Z] <<< HTTP RESPONSE 200
+[debug] [2021-06-01T13:00:55.518Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/plentycodeapi  
+  
+ Tue Jun 01 2021 08:00:55 GMT-0500 (Colombia Standard Time)
